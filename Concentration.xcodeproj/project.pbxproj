@@ -14,6 +14,8 @@
 		E827FCA81FF98FDC008C161E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E827FCA61FF98FDC008C161E /* LaunchScreen.storyboard */; };
 		E827FCB31FF98FDC008C161E /* ConcentrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E827FCB21FF98FDC008C161E /* ConcentrationTests.swift */; };
 		E827FCBE1FF98FDC008C161E /* ConcentrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E827FCBD1FF98FDC008C161E /* ConcentrationUITests.swift */; };
+		E830BAEC1FFAFC4900777858 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E830BAEB1FFAFC4900777858 /* Concentration.swift */; };
+		E830BAEE1FFAFCD800777858 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E830BAED1FFAFCD800777858 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		E827FCB91FF98FDC008C161E /* ConcentrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConcentrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E827FCBD1FF98FDC008C161E /* ConcentrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationUITests.swift; sourceTree = "<group>"; };
 		E827FCBF1FF98FDC008C161E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E830BAEB1FFAFC4900777858 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		E830BAED1FFAFCD800777858 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		E827FC9C1FF98FDC008C161E /* Concentration */ = {
 			isa = PBXGroup;
 			children = (
+				E830BAED1FFAFCD800777858 /* Card.swift */,
 				E827FC9D1FF98FDC008C161E /* AppDelegate.swift */,
 				E827FC9F1FF98FDC008C161E /* ViewController.swift */,
+				E830BAEB1FFAFC4900777858 /* Concentration.swift */,
 				E827FCA11FF98FDC008C161E /* Main.storyboard */,
 				E827FCA41FF98FDC008C161E /* Assets.xcassets */,
 				E827FCA61FF98FDC008C161E /* LaunchScreen.storyboard */,
@@ -261,6 +267,8 @@
 			files = (
 				E827FCA01FF98FDC008C161E /* ViewController.swift in Sources */,
 				E827FC9E1FF98FDC008C161E /* AppDelegate.swift in Sources */,
+				E830BAEC1FFAFC4900777858 /* Concentration.swift in Sources */,
+				E830BAEE1FFAFCD800777858 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
