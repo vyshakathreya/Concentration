@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet var cardsCollection: [UIButton]!
     @IBOutlet weak var pointsLabel: UILabel!
     @IBOutlet var backgroundView: UIView!
+    @IBOutlet weak var changeThemeButton: UIButton!
+    @IBOutlet weak var newGameButton: UIButton!
     
     lazy var game = Concentration(numberOfPairsOfCards: (cardsCollection.count + 1)/2)
     var buttonColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
@@ -53,13 +55,22 @@ class ViewController: UIViewController {
     
     
     @IBAction func changeTheme() {
-        var choice = Int(arc4random_uniform(UInt32(numberOfThemes + 1)))
-        var chosen = 1
         if flipCount > 0{
             let alertController = UIAlertController(title: "Terminating current game", message: "Do you want to continue?", preferredStyle: UIAlertControllerStyle.alert)
-            alertController.addAction(UIAlertAction(title: "Terminate", style: UIAlertActionStyle.default, handler:{UIAlertAction in choice = Int(arc4random_uniform(UInt32(self.numberOfThemes + 1)))
+            alertController.addAction(UIAlertAction(title: "Terminate", style: UIAlertActionStyle.default, handler:{UIAlertAction in self.doChange()
             }))
-            alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: { UIAlertAction in choice = chosen}))
+            alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
+            self.present(alertController, animated: true, completion: nil)
+        }else{
+            doChange()
+        }
+    }
+    
+    func doChange(){
+        var choice = Int(arc4random_uniform(UInt32(numberOfThemes + 1)))
+        var chosen = 0
+        if choice == chosen{
+            choice = Int(arc4random_uniform(UInt32(numberOfThemes + 1)))
         }
         emojiCollection.removeAll()
         copiedEmoji.removeAll()
@@ -95,6 +106,8 @@ class ViewController: UIViewController {
         self.buttonColor = buttonColor
         self.flipCountLabel.textColor = buttonColor
         self.pointsLabel.textColor = buttonColor
+        newGameButton.backgroundColor = buttonColor
+        changeThemeButton.backgroundColor = buttonColor
     }
     
     func updateViewFromModel(){

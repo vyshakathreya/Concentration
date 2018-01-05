@@ -197,7 +197,7 @@
                                                         <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <state key="normal" title="New Game">
-                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="newGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="UG5-6y-jwN"/>
@@ -208,7 +208,7 @@
                                                         <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <state key="normal" title="Change Theme">
-                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="changeTheme" destination="BYZ-38-t0r" eventType="touchUpInside" id="GFC-OO-Yue"/>
@@ -232,7 +232,9 @@
                     </view>
                     <connections>
                         <outlet property="backgroundView" destination="8bC-Xf-vdC" id="CXa-yq-Y0x"/>
+                        <outlet property="changeThemeButton" destination="e1i-2F-g8E" id="Ecr-V5-zWF"/>
                         <outlet property="flipCountLabel" destination="Cgz-vi-fL0" id="DV8-kf-Esq"/>
+                        <outlet property="newGameButton" destination="Bae-Rl-w2s" id="8Rq-yt-yD6"/>
                         <outlet property="pointsLabel" destination="G72-AY-1x9" id="1W9-1a-xOD"/>
                         <outletCollection property="cardsCollection" destination="2rr-8l-TDs" collectionClass="NSMutableArray" id="kNm-Mk-hSx"/>
                         <outletCollection property="cardsCollection" destination="80n-6s-O1Z" collectionClass="NSMutableArray" id="tJb-b7-Pev"/>
